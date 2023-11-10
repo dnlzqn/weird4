@@ -1,0 +1,1 @@
+g=10,o=0;setup=_=>{createCanvas(W=windowWidth,H=windowHeight);noStroke()};draw=_=>{o+=.05;for(i=0;i<W;i+=g)for(j=0;j<H;j+=g){d=dist(W/2,H/2,i+g/2,j+g/2),a=map(d,0,W/2,0,PI),s=abs(sin(a*(map(mouseX,0,W,1,55))+o));fill(.5<s?0:W),rect(i,j,g)}}
